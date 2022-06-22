@@ -1,0 +1,78 @@
+:root {
+    --dark-blue: #06283D
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    background-color: #F9F9F9;
+}
+
+:is(header, main) :is(h1, h2, h3, h4, h5) {
+    color: var(--dark-blue);
+}
+
+
+/* ==================================== Secction header ==================================== */
+
+
+header {
+    width: 100%;
+    height: auto;
+    padding: 20px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #D3EBCD;
+}
+
+header .header--container-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .header--container-me h3 {
+    font-size: 1.6rem;
+    margin-left: 10px;
+    letter-spacing: 1.2px;
+    word-spacing: 3px;
+}
+
+header .header--container-me img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    color: var(--dark-blue);
+    font-size: 1.4rem;
+    letter-spacing: .5px;
+    text-decoration: none;
+}
+
+
+/* ==================================== Secction main ==================================== */
+
+
