@@ -76,3 +76,59 @@ header nav ul li a {
 /* ==================================== Secction main ==================================== */
 
 
+main {
+    width: 100%;
+    height: auto;
+    margin: 30px 0;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+main .main--title {
+    font-size: 1.8rem;
+    padding: 10px;
+    letter-spacing: 1px;
+    word-spacing: 10px;
+    background-color: #AEDBCE;
+}
+
+main .main--date-update {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    text-decoration: underline;
+}
+
+main .main--date-update span {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+main .main--global-data {
+    margin-top: 40px;
+}
+
+:is(main .main--global-data) :is(h1, h2) {
+    font-size: 2.2rem;
+}
+
+main .main--global-data h2 {
+    margin-top: 20px;
+}
+
+:is(main .main--global-data) :is(span) {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+main #global_cases {
+    color: #EFD345;
+}
+
+main #global_deaths {
+    color: #F05454;
+}
+
+main #global_recovered {
+    color: #9EB23B;
+}
