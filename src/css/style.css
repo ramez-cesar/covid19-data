@@ -104,12 +104,12 @@ main .search_form {
 main .search_form .search_text {
     text-align: start;
     font-size: 1.5rem;
-    margin: 0 0 8px 20px;
+    margin-bottom: 10px;
     font-weight: 900;
 }
 
 main .search_form #search_country {
-    width: 280px;
+    width: 315px;
     padding: 8px 12px;
     margin: 0 auto;
     outline: none;
@@ -177,6 +177,83 @@ main #global_recovered {
 
 main #global_new_cases {
     color: #AF6B58;
+}
+
+
+/* =============================== Secction main dates global =============================== */
+
+
+main .main--container-country {
+    width: 315px;
+    height: auto;
+    padding: 15px 20px;
+    margin: 50px auto 30px;
+    border-radius: 10px;
+    background-color: #293748;
+    border: 1px solid #00FFC6;
+}
+
+main .main--container-country h3 {
+    color: #F9F9F9;
+    margin-bottom: 50px;
+    font-size: 1.8rem;
+    text-align: start;
+}
+
+main .main--container-country .country-cases h3 {
+    text-align: start;
+    margin-bottom: 8px;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* :is(main .main--container-country .country-cases .new-cases--container, .total-cases--container) {
+    padding: 8px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid gray;
+}
+
+:is(main .main--container-country .country-cases div) :is(div, h4, span) {
+    text-align: start;
+    font-size: 1.4rem;
+    color: #30AADD;
+    letter-spacing: .5px;
+}
+
+:is(main .main--container-country .country-cases div) :is(span) {
+    color: #D3CEDF;
+    font-weight: 900;
+} */
+
+:is(main .main--container-country .country-cases) :is(.new-cases, .total-cases) {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+main .main--container-country .country-cases table tr {
+    display: flex;
+}
+
+:is(main .main--container-country .country-cases .new-cases, .total-cases) :is(td) {
+    width: 100%;
+    padding: 5px 8px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    text-align: start;
+}
+
+:is(main .main--container-country .country-cases .new-cases, .total-cases tr td) :is(h4, span) {
+    color: #30AADD;
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+
+:is(main .main--container-country .country-cases .new-cases, .total-cases tr td) :is(span) {
+    color: #D3CEDF;
 }
 
 
