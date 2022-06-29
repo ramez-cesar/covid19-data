@@ -35,3 +35,11 @@ async function globalData() {
 }
 
 globalData()
+
+
+
+function randomValue() {
+    const totalCountries = 100;
+
+    return Math.floor(Math.random() * (0 - totalCountries) + totalCountries)
+}
