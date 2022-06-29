@@ -193,21 +193,21 @@ main .main--container-country {
     border: 1px solid #00FFC6;
 }
 
-main .main--container-country h3 {
+main .main--container-country .container-country h3 {
     color: #F9F9F9;
     margin-bottom: 50px;
     font-size: 1.8rem;
     text-align: start;
 }
 
-main .main--container-country .country-cases h3 {
+main .main--container-country .container-country .country-cases h3 {
     text-align: start;
     margin-bottom: 8px;
     font-size: 1.5rem;
     font-weight: 400;
 }
 
-/* :is(main .main--container-country .country-cases .new-cases--container, .total-cases--container) {
+/* :is(main .main--container-country .container-country .country-cases .new-cases--container, .total-cases--container) {
     padding: 8px;
     margin-bottom: 30px;
     display: flex;
@@ -216,28 +216,28 @@ main .main--container-country .country-cases h3 {
     border: 1px solid gray;
 }
 
-:is(main .main--container-country .country-cases div) :is(div, h4, span) {
+:is(main .main--container-country .container-country .country-cases div) :is(div, h4, span) {
     text-align: start;
     font-size: 1.4rem;
     color: #30AADD;
     letter-spacing: .5px;
 }
 
-:is(main .main--container-country .country-cases div) :is(span) {
+:is(main .main--container-country .container-country .country-cases div) :is(span) {
     color: #D3CEDF;
     font-weight: 900;
 } */
 
-:is(main .main--container-country .country-cases) :is(.new-cases, .total-cases) {
+:is(main .main--container-country .container-country .country-cases) :is(.new-cases, .total-cases) {
     width: 100%;
     margin-bottom: 30px;
 }
 
-main .main--container-country .country-cases table tr {
+main .main--container-country .container-country .country-cases table tr {
     display: flex;
 }
 
-:is(main .main--container-country .country-cases .new-cases, .total-cases) :is(td) {
+:is(main .main--container-country .container-country .country-cases .new-cases, .total-cases) :is(td) {
     width: 100%;
     padding: 5px 8px;
     display: flex;
@@ -246,13 +246,13 @@ main .main--container-country .country-cases table tr {
     text-align: start;
 }
 
-:is(main .main--container-country .country-cases .new-cases, .total-cases tr td) :is(h4, span) {
+:is(main .main--container-country .container-country .country-cases .new-cases, .total-cases tr td) :is(h4, span) {
     color: #30AADD;
     font-size: 1.4rem;
     font-weight: 900;
 }
 
-:is(main .main--container-country .country-cases .new-cases, .total-cases tr td) :is(span) {
+:is(main .main--container-country .container-country .country-cases .new-cases, .total-cases tr td) :is(span) {
     color: #D3CEDF;
 }
 
