@@ -207,27 +207,6 @@ main .main--container-country .container-country .country-cases h3 {
     font-weight: 400;
 }
 
-/* :is(main .main--container-country .container-country .country-cases .new-cases--container, .total-cases--container) {
-    padding: 8px;
-    margin-bottom: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid gray;
-}
-
-:is(main .main--container-country .container-country .country-cases div) :is(div, h4, span) {
-    text-align: start;
-    font-size: 1.4rem;
-    color: #30AADD;
-    letter-spacing: .5px;
-}
-
-:is(main .main--container-country .container-country .country-cases div) :is(span) {
-    color: #D3CEDF;
-    font-weight: 900;
-} */
-
 :is(main .main--container-country .container-country .country-cases) :is(.new-cases, .total-cases) {
     width: 100%;
     margin-bottom: 30px;
