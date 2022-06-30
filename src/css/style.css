@@ -59,6 +59,11 @@ header .header--container-me img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    transition: .8s;
+}
+
+header .header--container-me img:hover {
+    transform: rotate(45deg);
 }
 
 header nav ul {
@@ -85,7 +90,7 @@ header nav ul li a {
 main {
     width: 100%;
     height: auto;
-    margin: 30px 0;
+    margin: 30px 0 0;
     padding: 20px 30px;
     text-align: center;
 }
@@ -96,7 +101,8 @@ main {
 
 main .search_form {
     width: 100%;
-    margin: 50px 0 0;
+    max-width: 315px;
+    margin: 50px auto 0;
     display: flex;
     flex-direction: column;
 }
@@ -108,18 +114,42 @@ main .search_form .search_text {
     font-weight: 900;
 }
 
-main .search_form #search_country {
-    width: 315px;
+main .search_form .container-input-btn {
+    width: 100%;
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .search_form .container-input-btn #search_country {
+    width: 260px;
     padding: 8px 12px;
-    margin: 0 auto;
+    font-family: inherit;
     outline: none;
     border: 2px solid #9EB23B;
     border-radius: 5px;
 }
 
-main .search_form #search_country::placeholder {
+main .search_form .container-input-btn #search_country::placeholder {
     letter-spacing: .2px;
     font-family: 'Mulish', sans-serif;
+}
+
+main .search_form .container-input-btn #random_country_up {
+    display: none;
+    color: #282c30;
+    padding: 8px 12px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: inherit;
+    background-color: #82DBD8;
+    border: 1px solid #99C4C8;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+main .search_form .container-input-btn #random_country_up:hover {
+    background-color: #3BACB6;
 }
 
 
@@ -127,6 +157,8 @@ main .search_form #search_country::placeholder {
 
 
 main .main--title {
+    max-width: 315px;
+    margin: 0 auto;
     font-size: 1.8rem;
     padding: 10px;
     letter-spacing: 1px;
@@ -180,14 +212,23 @@ main #global_new_cases {
 }
 
 
-/* =============================== Secction main dates global =============================== */
+/* =============================== Secction main dates country =============================== */
 
 
 main .main--container-country {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .main--container-country .container-country {
     width: 315px;
     height: auto;
     padding: 15px 20px;
-    margin: 50px auto 30px;
+    margin-bottom: 40px;
     border-radius: 10px;
     background-color: #293748;
     border: 1px solid #00FFC6;
@@ -235,6 +276,24 @@ main .main--container-country .container-country .country-cases table tr {
     color: #D3CEDF;
 }
 
+main #random_country_down {
+    display: inline-block;
+    color: #282c30;
+    padding: 8px 12px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: inherit;
+    background-color: #82DBD8;
+    border: 1px solid #99C4C8;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+main #random_country_down:hover {
+    background-color: #3BACB6;
+}
+
 
 /* =================================== Secction footer =================================== */
 
@@ -252,7 +311,6 @@ footer {
 
 footer .footer--social-media {
     width: 100%;
-    max-width: 335px;
     margin-bottom: 40px;
     display: flex;
     justify-content: space-between;
