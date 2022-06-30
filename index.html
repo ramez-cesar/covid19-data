@@ -43,9 +43,13 @@
             <span id="global_new_cases"></span>
         </section>
 
-        <form id="search_form" class="search_form"> 
+        <form id="search_form" class="search_form">
             <label for="search_country" class="search_text">Search country:</label>
-            <input type="text" id="search_country" name="search_country" placeholder="Search by country...">
+            <div class="container-input-btn">
+                <input type="text" id="search_country" name="search_country" placeholder="Search by country...">
+                <button type="button" id="random_country_up">Random country</button>
+            </div>
+
         </form>
 
         <section class="main--container-country">
@@ -148,8 +152,58 @@
                 </div>
             </div>
 
-        </section>
 
+            <div class="container-country">
+                
+                <h3 id="third_country_name"></h3>
+    
+                <div class="country-cases">
+                    
+                    <h3>New cases</h3>
+                    <table class="new-cases">
+                        <tr>
+                            <td>
+                                <h4>Cases</h4> 
+                                <span id="new_cases_country_three"></span>
+                            </td>
+    
+                            <td>
+                                <h4>Actives</h4> 
+                                <span id="active_cases_country_three"></span>
+                            </td>
+                            
+                            <td>
+                                <h4>Deceased</h4>
+                                <span id="new_deaths_country_three"></span>
+                            </td>
+                        </tr>
+                    </table>
+    
+                    <h3>Total cases</h3>
+                    <table class="total-cases">
+                        <tr>
+                            <td>
+                                <h4>Cases</h4>
+                                <span id="total_cases_country_three"></span>
+                            </td>
+    
+                            <td>
+                                <h4>Deceased</h4> 
+                                <span id="total_deaths_country_three"></span>
+                            </td>
+                            
+                            <td>
+                                <h4>Recovered</h4>
+                                <span id="total_recovered_country_three"></span>
+                            </td>
+                        </tr>
+                    </table>
+    
+                </div>
+            </div>
+            
+        </section>
+        <button type="button" id="random_country_down">Random country</button>
     </main>
 
     <footer>
