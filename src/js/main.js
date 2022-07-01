@@ -234,6 +234,18 @@ async function showRandomDataCountry() {
 showRandomDataCountry()
 
 
+randomCountryDown.addEventListener('click', e => {
+    e.preventDefault()
+
+    showRandomDataCountry()
+})
+
+randomCountryUp.addEventListener('click', e => {
+    e.preventDefault()
+
+    showRandomDataCountry()
+})
+
 
 function randomValue() {
     const totalCountries = 100;
