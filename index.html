@@ -29,6 +29,7 @@
     </header>
 
     <main>
+        <h2 id="message_error"></h2>
         <h2 class="main--title">COVID-19 Coronavirus cases</h2>
         <p class="main--date-update">Update data: <span id="date_updated"></span></p>
 
@@ -46,7 +47,7 @@
         <form id="search_form" class="search_form">
             <label for="search_country" class="search_text">Search country:</label>
             <div class="container-input-btn">
-                <input type="text" id="search_country" name="search_country" placeholder="Search by country...">
+                <input type="text" id="search_country" name="search_country" placeholder="Search by country..." autocomplete="off">
                 <button type="button" id="random_country_up">Random country</button>
             </div>
 
