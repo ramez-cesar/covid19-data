@@ -29,7 +29,7 @@ async function globalData() {
         const month = date.getMonth()
         const year = date.getFullYear()
 
-        dateUpdated.textContent = `${day}, ${months[month]}, ${year}`
+        dateUpdated.textContent = `${day} ${months[month]}, ${year}`
         globalCases.textContent = data['Total Cases_text']
         globalDeaths.textContent = data['Total Deaths_text']
         globalRecovered.textContent = data['Total Recovered_text']
@@ -44,6 +44,59 @@ async function globalData() {
 globalData()
 
 
+function countryFound(query) {
+    const countryName = document.querySelector('#country_name')
+    const newCasesCountry = document.querySelector('#new_cases_country')
+    const activeCasesCountry = document.querySelector('#active_cases_country')
+    const deseacedCasesCountry = document.querySelector('#new_deaths_country')
+
+    const totalCasesCountry = document.querySelector('#total_cases_country')
+    const totalDeseacedCountry = document.querySelector('#total_deaths_country')
+    const totalRecoveredCountry = document.querySelector('#total_recovered_country')
+    
+    countryName.textContent = query['Country_text']
+    if(query['New Cases_text'] === "") {
+        newCasesCountry.textContent = "N/A"
+    } else {
+        newCasesCountry.textContent = query['New Cases_text']
+    }
+
+    if(query['Active Cases_text'] === "") {
+        activeCasesCountry.textContent = "N/A"
+    } else {
+        activeCasesCountry.textContent = query['Active Cases_text']
+    }
+
+    if(query['New Deaths_text'] === "") {
+        deseacedCasesCountry.textContent = "N/A"
+    } else {
+        deseacedCasesCountry.textContent = query['New Deaths_text']
+    }
+
+    if(query['New Cases_text'] === "") {
+        newCasesCountry.textContent = "N/A"
+    } else {
+        newCasesCountry.textContent = query['New Cases_text']
+    }
+
+    if(query['Active Cases_text'] === "") {
+        activeCasesCountry.textContent = "N/A"
+    } else {
+        activeCasesCountry.textContent = query['Active Cases_text']
+    }
+
+    if(query['New Deaths_text'] === "") {
+        deseacedCasesCountry.textContent = "N/A"
+    } else {
+        deseacedCasesCountry.textContent = query['New Deaths_text']
+    }
+
+    totalCasesCountry.textContent = query['Total Cases_text']
+    totalDeseacedCountry.textContent = query['Total Deaths_text']
+    totalRecoveredCountry.textContent = query['Total Recovered_text']
+}
+
+
 async function showRandomDataCountry() {
     const response = await fetch(URL_API_RANDOM)
     const data = await response.json()
@@ -51,6 +104,7 @@ async function showRandomDataCountry() {
     if(response.ok) {
         const countryName = document.querySelector('#country_name')
         const secondCountryName = document.querySelector('#second_country_name')
+        const thirdCountryName = document.querySelector('#third_country_name')
 
         // New cases
         const newCasesCountry = document.querySelector('#new_cases_country')
@@ -172,7 +226,7 @@ async function showRandomDataCountry() {
 
         if(countryThree === 0) {
             countryThree = 32
-            third_country_name.textContent = countryThree['Country_text']
+            thirdCountryName.textContent = countryThree['Country_text']
 
             if(countryThree['New Cases_text'] === "") {
                 newCasesCountryThree.textContent = "N/A"
@@ -193,7 +247,7 @@ async function showRandomDataCountry() {
             }
             
         } else {
-            third_country_name.textContent = countryThree['Country_text']
+            thirdCountryName.textContent = countryThree['Country_text']
 
             if(countryThree['New Cases_text'] === "") {
                 newCasesCountryThree.textContent = "N/A"
