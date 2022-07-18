@@ -44,6 +44,40 @@ async function globalData() {
 globalData()
 
 
+async function searchByCountry() {
+    const response = await fetch(URL_API_RANDOM)
+    const data = await response.json()
+
+    if(response.ok) {
+        searchCountry.addEventListener('input', () => {
+            data.filter(query => {
+                const country = query['Country_text']
+                if(country.includes(searchCountry.value)) {
+                    console.log(query['Country_text'])
+                    
+                    if(searchCountry.value != "") {
+                        countryFound(query)
+                        document.querySelector('.two').style.display = "none"
+                        document.querySelector('.three').style.display = "none"
+                    }
+                    else {
+                        document.querySelector('.two').style.display = "block"
+                        document.querySelector('.three').style.display = "block"
+                        showRandomDataCountry()
+                    }
+                } 
+            })
+        })
+        
+    } else {
+        mainGlobalData.innerHTML = ""
+        messageError.textContent = "Data not currently available. Please try again later."
+    }
+}
+
+searchByCountry()
+
+
 function countryFound(query) {
     const countryName = document.querySelector('#country_name')
     const newCasesCountry = document.querySelector('#new_cases_country')
