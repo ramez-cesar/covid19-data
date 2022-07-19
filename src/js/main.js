@@ -53,8 +53,6 @@ async function searchByCountry() {
             data.filter(query => {
                 const country = query['Country_text']
                 if(country?.includes(searchCountry.value)) {
-                    console.log(query['Country_text'])
-                    
                     if(searchCountry.value != "") {
                         countryFound(query)
                         document.querySelector('.two').style.display = "none"
@@ -66,7 +64,6 @@ async function searchByCountry() {
                     }
                 } 
             })
-
         })
         
     } else {
