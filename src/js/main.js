@@ -66,7 +66,7 @@ async function searchByCountry() {
                     }
                 } 
             })
-            
+
         })
         
     } else {
@@ -168,140 +168,64 @@ async function showRandomDataCountry() {
         let countryThree = data[randomValue()]
 
 
-        if(countryOne === 0) {
-            countryOne = 21
-            countryName.textContent = countryOne['Country_text']
-        
-            if(countryOne['New Cases_text'] === "") {
-                newCasesCountry.textContent = "N/A"
-            } else {
-                newCasesCountry.textContent = countryOne['New Cases_text']
-            }
-        
-            if(countryOne['Active Cases_text'] === "") {
-                activeCasesCountry.textContent = "N/A"
-            } else {
-                activeCasesCountry.textContent = countryOne['Active Cases_text']
-            }
-        
-            if(countryOne['New Deaths_text'] === "") {
-                deseacedCasesCountry.textContent = "N/A"
-            } else {
-                deseacedCasesCountry.textContent = countryOne['New Deaths_text']
-            }
-
+        countryName.textContent = countryOne['Country_text']
+        if(countryOne['New Cases_text'] === "") {
+            newCasesCountry.textContent = "N/A"
         } else {
-            countryName.textContent = countryOne['Country_text']
-        
-            if(countryOne['New Cases_text'] === "") {
-                newCasesCountry.textContent = "N/A"
-            } else {
-                newCasesCountry.textContent = countryOne['New Cases_text']
-            }
-        
-            if(countryOne['Active Cases_text'] === "") {
-                activeCasesCountry.textContent = "N/A"
-            } else {
-                activeCasesCountry.textContent = countryOne['Active Cases_text']
-            }
-        
-            if(countryOne['New Deaths_text'] === "") {
-                deseacedCasesCountry.textContent = "N/A"
-            } else {
-                deseacedCasesCountry.textContent = countryOne['New Deaths_text']
-            }
+            newCasesCountry.textContent = countryOne['New Cases_text']
+        }
+    
+        if(countryOne['Active Cases_text'] === "") {
+            activeCasesCountry.textContent = "N/A"
+        } else {
+            activeCasesCountry.textContent = countryOne['Active Cases_text']
+        }
+    
+        if(countryOne['New Deaths_text'] === "") {
+            deseacedCasesCountry.textContent = "N/A"
+        } else {
+            deseacedCasesCountry.textContent = countryOne['New Deaths_text']
         }
 
 
-        if(countryTwo === 0) {
-            countryTwo = 1
-            secondCountryName.textContent = countryTwo['Country_text']
-
-            if(countryTwo['New Cases_text'] === "") {
-                newCasesCountryTwo.textContent = "N/A"
-            } else {
-                newCasesCountryTwo.textContent = countryTwo['New Cases_text']
-            }
-        
-            if(countryTwo['Active Cases_text'] === "") {
-                activeCasesCountryTwo.textContent = "N/A"
-            } else {
-                activeCasesCountryTwo.textContent = countryTwo['Active Cases_text']
-            }
-        
-            if(countryTwo['New Deaths_text'] === "") {
-                deseacedCasesCountryTwo.textContent = "N/A"
-            } else {
-                deseacedCasesCountryTwo.textContent = countryTwo['New Deaths_text']
-            }
-            
+        secondCountryName.textContent = countryTwo['Country_text']
+        if(countryTwo['New Cases_text'] === "") {
+            newCasesCountryTwo.textContent = "N/A"
         } else {
-            secondCountryName.textContent = countryTwo['Country_text']
-
-            if(countryTwo['New Cases_text'] === "") {
-                newCasesCountryTwo.textContent = "N/A"
-            } else {
-                newCasesCountryTwo.textContent = countryTwo['New Cases_text']
-            }
-        
-            if(countryTwo['Active Cases_text'] === "") {
-                activeCasesCountryTwo.textContent = "N/A"
-            } else {
-                activeCasesCountryTwo.textContent = countryTwo['Active Cases_text']
-            }
-        
-            if(countryTwo['New Deaths_text'] === "") {
-                deseacedCasesCountryTwo.textContent = "N/A"
-            } else {
-                deseacedCasesCountryTwo.textContent = countryTwo['New Deaths_text']
-            }
+            newCasesCountryTwo.textContent = countryTwo['New Cases_text']
+        }
+    
+        if(countryTwo['Active Cases_text'] === "") {
+            activeCasesCountryTwo.textContent = "N/A"
+        } else {
+            activeCasesCountryTwo.textContent = countryTwo['Active Cases_text']
+        }
+    
+        if(countryTwo['New Deaths_text'] === "") {
+            deseacedCasesCountryTwo.textContent = "N/A"
+        } else {
+            deseacedCasesCountryTwo.textContent = countryTwo['New Deaths_text']
         }
 
 
-        if(countryThree === 0) {
-            countryThree = 32
-            thirdCountryName.textContent = countryThree['Country_text']
-
-            if(countryThree['New Cases_text'] === "") {
-                newCasesCountryThree.textContent = "N/A"
-            } else {
-                newCasesCountryThree.textContent = countryThree['New Cases_text']
-            }
-        
-            if(countryThree['Active Cases_text'] === "") {
-                activeCasesCountryThree.textContent = "N/A"
-            } else {
-                activeCasesCountryThree.textContent = countryThree['Active Cases_text']
-            }
-        
-            if(countryThree['New Deaths_text'] === "") {
-                deseacedCasesCountryThree.textContent = "N/A"
-            } else {
-                deseacedCasesCountryThree.textContent = countryThree['New Deaths_text']
-            }
-            
+        thirdCountryName.textContent = countryThree['Country_text']
+        if(countryThree['New Cases_text'] === "") {
+            newCasesCountryThree.textContent = "N/A"
         } else {
-            thirdCountryName.textContent = countryThree['Country_text']
-
-            if(countryThree['New Cases_text'] === "") {
-                newCasesCountryThree.textContent = "N/A"
-            } else {
-                newCasesCountryThree.textContent = countryThree['New Cases_text']
-            }
-        
-            if(countryThree['Active Cases_text'] === "") {
-                activeCasesCountryThree.textContent = "N/A"
-            } else {
-                activeCasesCountryThree.textContent = countryThree['Active Cases_text']
-            }
-        
-            if(countryThree['New Deaths_text'] === "") {
-                deseacedCasesCountryThree.textContent = "N/A"
-            } else {
-                deseacedCasesCountryThree.textContent = countryThree['New Deaths_text']
-            }
+            newCasesCountryThree.textContent = countryThree['New Cases_text']
         }
-
+    
+        if(countryThree['Active Cases_text'] === "") {
+            activeCasesCountryThree.textContent = "N/A"
+        } else {
+            activeCasesCountryThree.textContent = countryThree['Active Cases_text']
+        }
+    
+        if(countryThree['New Deaths_text'] === "") {
+            deseacedCasesCountryThree.textContent = "N/A"
+        } else {
+            deseacedCasesCountryThree.textContent = countryThree['New Deaths_text']
+        }
 
         totalCasesCountry.textContent = countryOne['Total Cases_text']
         totalDeseacedCountry.textContent = countryOne['Total Deaths_text']
@@ -324,13 +248,11 @@ showRandomDataCountry()
 
 randomCountryDown.addEventListener('click', e => {
     e.preventDefault()
-
     showRandomDataCountry()
 })
 
 randomCountryUp.addEventListener('click', e => {
     e.preventDefault()
-
     showRandomDataCountry()
 })
 
@@ -338,5 +260,5 @@ randomCountryUp.addEventListener('click', e => {
 function randomValue() {
     const totalCountries = 100;
 
-    return Math.floor(Math.random() * (0 - totalCountries) + totalCountries)
+    return Math.floor(Math.random() * (1 - totalCountries) + totalCountries)
 }
