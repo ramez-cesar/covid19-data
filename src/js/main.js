@@ -52,7 +52,7 @@ async function searchByCountry() {
         searchCountry.addEventListener('input', () => {
             data.filter(query => {
                 const country = query['Country_text']
-                if(country.includes(searchCountry.value)) {
+                if(country?.includes(searchCountry.value)) {
                     console.log(query['Country_text'])
                     
                     if(searchCountry.value != "") {
@@ -63,10 +63,10 @@ async function searchByCountry() {
                     else {
                         document.querySelector('.two').style.display = "block"
                         document.querySelector('.three').style.display = "block"
-                        showRandomDataCountry()
                     }
                 } 
             })
+            
         })
         
     } else {
