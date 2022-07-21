@@ -83,6 +83,11 @@ header nav ul li a {
     letter-spacing: .5px;
 }
 
+header nav ul li a:hover {
+    color: #FE7E6D;
+    transition: .3s;
+}
+
 
 /* ===================================== Secction main ===================================== */
 
@@ -318,7 +323,12 @@ footer .footer--social-media {
 
 footer .footer--social-media a {
     color: #F9F9F9;
-    letter-spacing: .8px;
+    transition: .5s;
+    letter-spacing: .5px;
+}
+
+footer .footer--social-media a:hover {
+    color: #FE7E6D;
 }
 
 footer .footer--logo-name {
