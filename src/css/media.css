@@ -1,5 +1,5 @@
 @media(min-width: 375px) {
-    main .search_form #search_country {
+    main .search_form .container-input-btn #search_country {
         width: 315px;
     }
 }
