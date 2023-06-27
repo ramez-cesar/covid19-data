@@ -1,350 +1,337 @@
 :root {
-    --dark-gray: #343A40
+  --dark-gray: #343A40
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    font-family: 'Mulish', sans-serif;
-    background-color: #F9F9F9;
+  font-family: 'Mulish', sans-serif;
+  background-color: #F9F9F9;
 }
 
 :is(header, main) :is(h1, h2, h3, h4, h5) {
-    color: var(--dark-gray);
+  color: var(--dark-gray);
 }
 
 :is(header, main, footer) :is(a) {
-    text-decoration: none;
-    font-size: 1.4rem;
-    letter-spacing: .5px;
+  text-decoration: none;
+  font-size: 1.4rem;
+  letter-spacing: .5px;
 }
-
 
 /* ==================================== Secction header ==================================== */
 
-
 header {
-    width: 100%;
-    height: auto;
-    padding: 20px 12px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #D3EBCD;
-    box-shadow: 6px 4px 20px #97a7b1;
+  width: 100%;
+  height: auto;
+  padding: 20px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #D3EBCD;
+  box-shadow: 6px 4px 20px #97a7b1;
 }
 
 header .header--container-me {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 header .header--container-me h3 {
-    font-size: 1.6rem;
-    margin-left: 10px;
-    letter-spacing: 1.2px;
-    word-spacing: 3px;
+  font-size: 1.6rem;
+  margin-left: 10px;
+  letter-spacing: 1.2px;
+  word-spacing: 3px;
 }
 
 header .header--container-me img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    transition: .8s;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: .8s;
 }
 
 header .header--container-me img:hover {
-    transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 header nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 header nav ul li {
-    list-style: none;
+  list-style: none;
 }
 
 header nav ul li a {
-    color: var(--dark-blue);
-    font-size: 1.4rem;
-    letter-spacing: .5px;
+  color: var(--dark-blue);
+  font-size: 1.4rem;
+  letter-spacing: .5px;
 }
 
 header nav ul li a:hover {
-    color: #FE7E6D;
-    transition: .3s;
+  color: #FE7E6D;
+  transition: .3s;
 }
-
 
 /* ===================================== Secction main ===================================== */
 
-
 main {
-    width: 100%;
-    height: auto;
-    margin: 30px 0 0;
-    padding: 20px 30px;
-    text-align: center;
+  width: 100%;
+  height: auto;
+  margin: 30px 0 0;
+  padding: 20px 30px;
+  text-align: center;
 }
-
 
 /* ================================= Secction main search ================================= */
 
-
 main .search_form {
-    width: 100%;
-    max-width: 315px;
-    margin: 50px auto 0;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  max-width: 315px;
+  margin: 50px auto 0;
+  display: flex;
+  flex-direction: column;
 }
 
 main .search_form .search_text {
-    text-align: start;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    font-weight: 900;
+  text-align: start;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 900;
 }
 
 main .search_form .container-input-btn {
-    width: 100%;
-    text-align: start;
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  text-align: start;
+  display: flex;
+  justify-content: space-between;
 }
 
 main .search_form .container-input-btn #search_country {
-    width: 260px;
-    padding: 8px 12px;
-    font-family: inherit;
-    outline: none;
-    border: 2px solid #9EB23B;
-    border-radius: 5px;
+  width: 260px;
+  padding: 8px 12px;
+  font-family: inherit;
+  outline: none;
+  border: 2px solid #9EB23B;
+  border-radius: 5px;
 }
 
 main .search_form .container-input-btn #search_country::placeholder {
-    letter-spacing: .2px;
-    font-family: 'Mulish', sans-serif;
+  letter-spacing: .2px;
+  font-family: 'Mulish', sans-serif;
 }
 
 main .search_form .container-input-btn #random_country_up {
-    display: none;
-    color: #282c30;
-    padding: 8px 12px;
-    font-size: 1.5rem;
-    font-weight: 900;
-    font-family: inherit;
-    background-color: #82DBD8;
-    border: 1px solid #99C4C8;
-    border-radius: 5px;
-    transition: .5s;
+  display: none;
+  color: #282c30;
+  padding: 8px 12px;
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-family: inherit;
+  background-color: #82DBD8;
+  border: 1px solid #99C4C8;
+  border-radius: 5px;
+  transition: .5s;
 }
 
 main .search_form .container-input-btn #random_country_up:hover {
-    background-color: #3BACB6;
+  background-color: #3BACB6;
 }
-
 
 /* =============================== Secction main dates global =============================== */
 
-
 main .main--title {
-    max-width: 315px;
-    margin: 0 auto;
-    font-size: 1.8rem;
-    padding: 10px;
-    letter-spacing: 1px;
-    word-spacing: 10px;
-    background-color: #AEDBCE;
+  max-width: 315px;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  padding: 10px;
+  letter-spacing: 1px;
+  word-spacing: 10px;
+  background-color: #AEDBCE;
 }
 
 main .main--date-update {
-    margin-top: 10px;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-    text-decoration: underline;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  text-decoration: underline;
 }
 
 main .main--date-update span {
-    margin-top: 10px;
-    font-size: 1.2rem;
+  margin-top: 10px;
+  font-size: 1.2rem;
 }
 
 main .main--global-data {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 :is(main .main--global-data) :is(h1, h2) {
-    font-size: 2.2rem;
+  font-size: 2.2rem;
 }
 
 main .main--global-data h2 {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 :is(main .main--global-data) :is(span) {
-    font-size: 3rem;
-    font-weight: 900;
+  font-size: 3rem;
+  font-weight: 900;
 }
 
 main #global_cases {
-    color: #687980;
+  color: #687980;
 }
 
 main #global_deaths {
-    color: #F05454;
+  color: #F05454;
 }
 
 main #global_recovered {
-    color: #9EB23B;
+  color: #9EB23B;
 }
 
 main #global_new_cases {
-    color: #AF6B58;
+  color: #AF6B58;
 }
-
 
 /* =============================== Secction main dates country =============================== */
 
-
 main .main--container-country {
-    width: 100%;
-    height: auto;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 main .main--container-country .container-country {
-    width: 315px;
-    height: auto;
-    padding: 15px 20px;
-    margin-bottom: 40px;
-    border-radius: 10px;
-    background-color: #293748;
-    border: 1px solid #00FFC6;
+  width: 315px;
+  height: auto;
+  padding: 15px 20px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  background-color: #293748;
+  border: 1px solid #00FFC6;
 }
 
 main .main--container-country .container-country h3 {
-    color: #F9F9F9;
-    margin-bottom: 50px;
-    font-size: 1.8rem;
-    text-align: start;
+  color: #F9F9F9;
+  margin-bottom: 50px;
+  font-size: 1.8rem;
+  text-align: start;
 }
 
 main .main--container-country .container-country .country-cases h3 {
-    text-align: start;
-    margin-bottom: 8px;
-    font-size: 1.5rem;
-    font-weight: 400;
+  text-align: start;
+  margin-bottom: 8px;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
 :is(main .main--container-country .container-country .country-cases) :is(.new-cases, .total-cases) {
-    width: 100%;
-    margin-bottom: 30px;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 main .main--container-country .container-country .country-cases table tr {
-    display: flex;
+  display: flex;
 }
 
 :is(main .main--container-country .container-country .country-cases .new-cases, .total-cases) :is(td) {
-    width: 100%;
-    padding: 5px 8px;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid gray;
-    text-align: start;
+  width: 100%;
+  padding: 5px 8px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  text-align: start;
 }
 
 :is(main .main--container-country .container-country .country-cases .new-cases, .total-cases tr td) :is(h4, span) {
-    color: #30AADD;
-    font-size: 1.4rem;
-    font-weight: 900;
+  color: #30AADD;
+  font-size: 1.4rem;
+  font-weight: 900;
 }
 
 :is(main .main--container-country .container-country .country-cases .new-cases, .total-cases tr td) :is(span) {
-    color: #D3CEDF;
+  color: #D3CEDF;
 }
 
-main #random_country_down {
-    display: inline-block;
-    color: #282c30;
-    padding: 8px 12px;
-    margin-bottom: 20px;
-    font-size: 1.5rem;
-    font-weight: 900;
-    font-family: inherit;
-    background-color: #82DBD8;
-    border: 1px solid #99C4C8;
-    border-radius: 5px;
-    transition: .5s;
+main #btn_random_country {
+  display: inline-block;
+  color: #282c30;
+  padding: 8px 12px;
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-family: inherit;
+  background-color: #82DBD8;
+  border: 1px solid #99C4C8;
+  border-radius: 5px;
+  transition: .5s;
 }
 
-main #random_country_down:hover {
-    background-color: #3BACB6;
+main #btn_random_country:hover {
+  background-color: #3BACB6;
 }
-
 
 /* =================================== Secction footer =================================== */
 
-
 footer {
-    width: 100%;
-    height: 250px;
-    display: flex;
-    padding: 0 20px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--dark-gray);
+  width: 100%;
+  height: 250px;
+  display: flex;
+  padding: 0 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-gray);
 }
 
 footer .footer--social-media {
-    width: 100%;
-    margin-bottom: 40px;
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
 }
 
 footer .footer--social-media a {
-    color: #F9F9F9;
-    transition: .5s;
-    letter-spacing: .5px;
+  color: #F9F9F9;
+  transition: .5s;
+  letter-spacing: .5px;
 }
 
 footer .footer--social-media a:hover {
-    color: #FE7E6D;
+  color: #FE7E6D;
 }
 
 footer .footer--logo-name {
-    text-align: center;
+  text-align: center;
 }
 
 footer .footer--logo-name img {
-    width: 85px;
-    height: 85px;
-    margin-bottom: 10px;
-    border-radius: 50%;
+  width: 85px;
+  height: 85px;
+  margin-bottom: 10px;
+  border-radius: 50%;
 }
 
 footer .footer--logo-name h4 {
-    color: #F9F9F9;
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-    word-spacing: 3px;
+  color: #F9F9F9;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  word-spacing: 3px;
 }
