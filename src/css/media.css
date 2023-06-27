@@ -1,78 +1,74 @@
 @media(min-width: 375px) {
-    main .search_form .container-input-btn #search_country {
-        width: 315px;
-    }
+  main .search_form .container-input-btn #search_country {
+    width: 315px;
+  }
 }
 
 @media(min-width: 375px) {
-    footer .footer--social-media {
-        justify-content: space-around;
-        max-width: 728px;
-    }
+  footer .footer--social-media {
+    justify-content: space-around;
+    max-width: 728px;
+  }
 }
 
 @media(min-width: 768px) {
-    header {
-        padding: 22px 30px;
-    }
+  header {
+    padding: 22px 30px;
+  }
 
-    header .header--container-me h3 {
-        font-size: 2rem;
-        margin-left: 15px;
-    }
+  header .header--container-me h3 {
+    font-size: 2rem;
+    margin-left: 15px;
+  }
 
-    header nav ul {
-        gap: 50px;
-    }
+  header nav ul {
+    gap: 50px;
+  }
 
-    header nav ul li a {
-        font-size: 1.6rem;
-    }
+  header nav ul li a {
+    font-size: 1.6rem;
+  }
 
-    main .main--title {
-        max-width: 330px;
-        font-size: 2rem;
-    }
+  main .main--title {
+    max-width: 330px;
+    font-size: 2rem;
+  }
 
-    :is(main .main--global-data) :is(h1, h2) {
-        font-size: 2.5rem;
-    }
+  :is(main .main--global-data) :is(h1, h2) {
+    font-size: 2.5rem;
+  }
 
-    main .search_form {
-        max-width: 620px;
-    }
+  main .search_form {
+    max-width: 620px;
+  }
 
-    main .search_form .search_text {
-        font-size: 2rem;
-        margin-bottom: 15px;
-    }
+  main .search_form .search_text {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
 
-    main .search_form .container-input-btn #search_country {
-        width: 450px;
-        padding: 10px 16px;
-    }
+  main .search_form .container-input-btn #search_country {
+    width: 450px;
+    padding: 10px 16px;
+  }
 
-    main .search_form .container-input-btn #random_country_up {
-        display: block;
-    }
+  main .search_form .container-input-btn #btn_random_country {
+    display: block;
+  }
 
-    main .main--container-country {
-        flex-direction: row;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-    }
+  main .main--container-country {
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
 
-    main #random_country_down {
-        display: none;
-    }
-
-    footer .footer--logo-name h4 {
-        font-size: 1.8rem;
-    }
+  footer .footer--logo-name h4 {
+    font-size: 1.8rem;
+  }
 }
 
 @media(min-width: 900px) {
-    header {
-        padding: 30px 50px;
-    }
+  header {
+    padding: 30px 50px;
+  }
 }
